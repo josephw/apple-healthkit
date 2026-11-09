@@ -11,7 +11,7 @@ from xml.etree import ElementTree
 from datetime import datetime, timedelta
 from sys import stderr
 
-d = ElementTree.parse("export.xml")
+d = ElementTree.parse("swimming-workouts.xml")
 
 workouts = d.findall("Workout[@workoutActivityType='HKWorkoutActivityTypeSwimming']")
 
